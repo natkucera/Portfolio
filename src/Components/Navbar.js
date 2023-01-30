@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import profilepic from "/home/nat/Resume/Website/Portfolio/natkucera.github.io/src/IMG_2857.PNG";
+import profilepic from "/home/nat/Resume/Website/Portfolio/src/IMG_2857.PNG";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
