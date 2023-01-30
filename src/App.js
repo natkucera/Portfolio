@@ -1,44 +1,50 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
-import dummyText from "./DummyText";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
+import Extra from "./Components/Extra";
+import { Divider } from "@mui/material";
+
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <Navbar />
+        <div className="sections">
         <Section
-          title="Section 1"
-          subtitle={dummyText}
-          dark={true}
-          id="section1"
+          title="Hello, my name is Natasha👋"
+          subtitle={About}
+          id="aboutme"
+          className="child"
+          main={true}
         />
+        <Divider color="#DD9FE0" />
         <Section
-          title="Section 2"
-          subtitle={dummyText}
-          dark={false}
-          id="section2"
+          title="Projects"
+          subtitle={Projects}
+          id="projects"
+          className="child"
         />
+        <Divider color="#DD9FE0" />
         <Section
-          title="Section 3"
-          subtitle={dummyText}
-          dark={true}
-          id="section3"
+          title="Skills"
+          subtitle={Skills}
+          id="skills"
+          className="child"
         />
+        <Divider color="#DD9FE0" />
         <Section
-          title="Section 4"
-          subtitle={dummyText}
-          dark={false}
-          id="section4"
+          title="Extra"
+          subtitle={Extra}
+          id="extra"
+          className="child"
         />
-        <Section
-          title="Section 5"
-          subtitle={dummyText}
-          dark={true}
-          id="section5"
-        />
+        </div>
       </div>
     );
   }
