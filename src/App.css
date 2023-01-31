@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
+@media (max-width: 680px) {
+  
+  }
+
 :root {
   --off-white: #fafafa;
   overflow: scroll;
+  width: 100%;
   scroll-snap-type: y mandatory;
   scroll-snap-align: center;
-  background: 	#f0afdd;
   background: linear-gradient(to bottom right, 	#f0afdd 0%,	#a2e5e0 100%);
 }
 
@@ -14,10 +18,10 @@ body {
 }
 
 .App {
-  margin: 75px;
-  padding-left: 60px;
-  padding-top: 75px;
-  padding-bottom: 50px;
+  margin: 100px auto;
+  width: 90%;
+  padding: 50px;
+  justify-self: center;
   display: flex;
   border: 5px solid black;
   background-color: white;
@@ -27,44 +31,38 @@ body {
 .nav {
   position: sticky;
   top: 100px;
-  width: 30%;
+  width: 500px;
   height: 100%;
 }
 
 .profilepic {
-  width: 80%;
+  width: 100%;
   border-radius: 50%;
 }
 
 .name {
   margin-top: 25px;
-  font-size: 35px;
-  border-radius: 10%;
+  font-size: 40px;
   text-shadow: 5px 2px 2px #f0afdd;
 }
 
 h1 {
   font-size: 50px;
-  border-radius: 5%;
-  text-shadow: 5px 2px 2px #a2e5e0;
-  max-width: fit-content;
+  text-shadow: 5px 2px 2px #f0afdd;
 }
 
 h2 {
   font-size: 30px;
-  border-radius: 5%;
-  text-shadow: 5px 2px 2px #a2e5e0;
-  max-width: fit-content;
+  text-shadow: 5px 2px 2px #f0afdd;
 }
 
-.nav .nav-content {
-  max-width: 800px;
-  padding: 10px;
-  margin: 0 auto;
+.nav-content {
+  padding: 25px;
+  width: 500px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
 .nav-item {
@@ -94,18 +92,23 @@ h2 {
   scroll-snap-align: start;
 }
 
+.sections {
+  margin: 75px;
+}
+
 .section-content {
-  width: 900px;
+  width: auto;
   color: rgb(0, 0, 0);
-  margin: 0 auto;
-  padding: 50px;
-  line-height: 30px;
+  padding: 25px 75px 50px;
+  line-height: 40px;
   font-size: 20px;
+  text-align: justify;
 }
 
 .skills-section {
   display: flex;
   margin: auto;
+  padding: 10px;
   text-align: center;
 }
 
@@ -117,16 +120,24 @@ h2 {
 
 .highlight {
   font-weight: bold;
-  text-shadow: 5px 2px 2px #a2e5e0;
+  text-shadow: 5px 2px 2px #f0afdd;
 }
 
 .card {
   width: 400px;
   height: 300px;
-  padding: 2;
+  margin: 25px;
   border: 3px solid black;
-  box-shadow: 15px 10px 5px #a2e5e0;
+  box-shadow: 15px 10px 5px #f0afdd;
   overflow: hidden;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 5px 2px 2px #c273aa;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .card * {
@@ -148,7 +159,7 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  text-shadow: 5px 2px 2px #a2e5e0;
+  text-shadow: 5px 2px 2px #f0afdd;
   text-transform: uppercase;
 }
 

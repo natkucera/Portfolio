@@ -7,8 +7,7 @@ export default function Section({ title, subtitle, id, main=false }) {
         {main
           ? <h1>{title}</h1>
           : <h2>{title}</h2>
-        } 
-        
+        }  
         {subtitle}
       </div>
     </div>

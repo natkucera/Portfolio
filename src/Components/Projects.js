@@ -6,14 +6,16 @@ function Projects() {
   return (
     <div className="project-cards">
 
-        <Grid container spacing={4}>
-            <Grid item xs={12} >
+        <Grid container spacing={4} columns={8} justifyContent="space-evenly">
+            <Grid item xs={8} >
                 <div className="project-text">
-                These are some of the projects I have done so far. Hope to add more in the future
+                <p>I made this site from scratch using React's create app, Material UI, JavaScript, and CSS.
+                    Below are a few more projects I have completed, mostly from The Odin Project that you can view.</p>
+                <p>Check back to see more as I will be updating these as I go.</p>
                 </div> 
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={3}>
                 <div class="card">
                     <img src="https://picsum.photos/id/404/367/267" alt=""/>
                     <h3>Calculator</h3>
@@ -24,7 +26,7 @@ function Projects() {
                 </div>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={3}>
                 <div class="card">
                     <img src="https://picsum.photos/id/404/367/267" alt=""/>
                     <h3>Library</h3>
@@ -35,7 +37,7 @@ function Projects() {
                 </div>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={3}>
                 <div class="card">
                     <img src="https://picsum.photos/id/404/367/267" alt=""/>
                     <h3>Tic Tac Toe</h3>
@@ -46,7 +48,7 @@ function Projects() {
                 </div>
             </Grid>
             
-            <Grid item xs={6}>
+            <Grid item xs={3}>
                 <div class="card">
                     <img src="https://picsum.photos/id/404/367/267" alt=""/>
                     <h3>Calculator</h3>
