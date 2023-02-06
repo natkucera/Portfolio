@@ -15,35 +15,35 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <div className="sections">
-        <Section
-          title="Hello, my name is Natasha👋"
-          subtitle={About}
-          id="aboutme"
-          className="child"
-          main={true}
-        />
-        <Divider color="#DD9FE0" />
-        <Section
-          title="Projects"
-          subtitle={Projects}
-          id="projects"
-          className="child"
-        />
-        <Divider color="#DD9FE0" />
-        <Section
-          title="Skills"
-          subtitle={Skills}
-          id="skills"
-          className="child"
-        />
-        <Divider color="#DD9FE0" />
-        <Section
-          title="Extra"
-          subtitle={Extra}
-          id="extra"
-          className="child"
-        />
+        <div className="content">
+          <Section
+            title="Hello, my name is Natasha👋"
+            subtitle={About}
+            id="aboutme"
+            className="child"
+            main={true}
+          />
+          <Divider color="#DD9FE0" />
+          <Section
+            title="Projects"
+            subtitle={Projects}
+            id="projects"
+            className="child"
+          />
+          <Divider color="#DD9FE0" />
+          <Section
+            title="Skills"
+            subtitle={Skills}
+            id="skills"
+            className="child"
+          />
+          <Divider color="#DD9FE0" />
+          <Section
+            title="Extra"
+            subtitle={Extra}
+            id="extra"
+            className="child"
+          />
         </div>
       </div>
     );

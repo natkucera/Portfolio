@@ -11,6 +11,7 @@
   scroll-snap-type: y mandatory;
   scroll-snap-align: center;
   background: linear-gradient(to bottom right, 	#f0afdd 0%,	#a2e5e0 100%);
+  background-repeat: no-repeat;
 }
 
 body {
@@ -18,9 +19,10 @@ body {
 }
 
 .App {
-  margin: 100px auto;
-  width: 90%;
-  padding: 50px;
+  width: 80%;
+  min-width: 960px;
+  margin: 25px auto;
+  padding: 25px;
   justify-self: center;
   display: flex;
   border: 5px solid black;
@@ -28,15 +30,25 @@ body {
   box-shadow: 15px 10px 5px white;
 }
 
+h1 {
+  font-size: 3vw;
+  text-shadow: 5px 2px 2px #f0afdd;
+}
+
+h2 {
+  font-size: 2vw;
+  text-shadow: 5px 2px 2px #f0afdd;
+}
+
 .nav {
   position: sticky;
   top: 100px;
-  width: 500px;
   height: 100%;
+  width: auto;
 }
 
 .profilepic {
-  width: 100%;
+  max-width: 100%;
   border-radius: 50%;
 }
 
@@ -46,23 +58,24 @@ body {
   text-shadow: 5px 2px 2px #f0afdd;
 }
 
-h1 {
-  font-size: 50px;
-  text-shadow: 5px 2px 2px #f0afdd;
-}
-
-h2 {
-  font-size: 30px;
-  text-shadow: 5px 2px 2px #f0afdd;
+.contact {
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .nav-content {
   padding: 25px;
-  width: 500px;
+  width: 450px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.nav-items {
+  padding: 5px;
+  line-height: 25px;
 }
 
 .nav-item {
@@ -72,37 +85,25 @@ h2 {
   color: #333;
 }
 
-.nav-items {
-  padding: 0px;
-  line-height: 25px;
-}
-
 .nav-item:hover {
   color: 	#f0afdd;
   cursor: pointer;
 }
 
-.contact {
-  font-size: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.content {
+  padding: 50px;
+  overflow: hidden;
+}
+
+.section-content {
+  line-height: 40px;
+  font-size: 1.2vw;
+  text-align: justify;
 }
 
 .section {
   scroll-snap-align: start;
-}
-
-.sections {
-  margin: 75px;
-}
-
-.section-content {
-  width: auto;
-  color: rgb(0, 0, 0);
-  padding: 25px 75px 50px;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: justify;
+  padding: 75px 20px;
 }
 
 .skills-section {
@@ -112,24 +113,31 @@ h2 {
   text-align: center;
 }
 
-.project-pic {
-  width: 400px;
-  height: 200px;
-  color:#f0afdd;
-}
-
 .highlight {
   font-weight: bold;
   text-shadow: 5px 2px 2px #f0afdd;
 }
 
+.project-link {
+  text-align: right;
+  padding: 5px;
+}
+
+.project-cards {
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
-  width: 400px;
-  height: 300px;
-  margin: 25px;
+  width: 450px;
+  margin: 30px;
+  height: 325px;
   border: 3px solid black;
   box-shadow: 15px 10px 5px #f0afdd;
   overflow: hidden;
+  background-color: white;
 }
 
 .card a {
@@ -138,6 +146,7 @@ h2 {
   text-shadow: 5px 2px 2px #c273aa;
   font-size: 20px;
   text-transform: uppercase;
+  padding: 25px;
 }
 
 .card * {
@@ -146,7 +155,7 @@ h2 {
 
 .card img {
   margin: 0;
-  width: 400px;
+  width: 450px;
   height: 250px;
   object-fit: cover;
   display: block;
@@ -154,32 +163,34 @@ h2 {
 
 .card h3 {
   margin: 0;
-  padding: 12px 12px 48px;
+  padding: 12px 10px 40px;
   line-height: 32px;
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
   text-shadow: 5px 2px 2px #f0afdd;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card .focus-content {
   display: block;
-  padding: 8px 12px;
+  padding: 8px 8px;
 }
 
 .card p {
   margin: 0;
   line-height: 1.5;
+  font-size: 20px;
   padding-top: 2px;
+  text-align: center;
 }
 
 .card:hover img, .card:focus-within img {
-  margin-top: -140px;
+  margin-top: -125px;
 }
 
 .card:hover h3, .card:focus-within h3 {
-  padding: 8px 12px 0;
+  padding: 8px 10px 0;
 }
 
 .card:hover {
