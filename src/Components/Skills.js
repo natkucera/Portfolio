@@ -13,10 +13,9 @@ const chipStyle = {
 function Skills() {
   return (
     <div className="skills-section">
-        
-        <Grid container spacing={2}>
+        <Grid container spacing={6}>
           <Grid item xs={6}>
-            <h3>Languages & Frameworks</h3>
+            <h2>Languages & Frameworks</h2>
               <Chip sx={ chipStyle } label="HTML" />
               <Chip sx={ chipStyle } label="JavaScript" />
               <Chip sx={ chipStyle } label="CSS" />
@@ -27,7 +26,7 @@ function Skills() {
               <Chip sx={ chipStyle } label="NodeJS" />
           </Grid>
           <Grid item xs={6}>
-            <h3>Soft Skills</h3>
+            <h2>Soft Skills</h2>
               <Chip sx={ chipStyle } label="Communication" />
               <Chip sx={ chipStyle } label="Teamwork" />
               <Chip sx={ chipStyle } label="Problem-solving" />

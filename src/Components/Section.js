@@ -1,13 +1,10 @@
 import React from "react";
 
-export default function Section({ title, subtitle, id, main=false }) {
+export default function Section({ title, subtitle, id }) {
   return (
     <div className={"section"}>
       <div className="section-content" id={id}>
-        {main
-          ? <h1>{title}</h1>
-          : <h2>{title}</h2>
-        }  
+        <h3>{title}</h3>
         {subtitle}
       </div>
     </div>

@@ -1,87 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-@media (max-width: 680px) {
-  
-  }
-
 :root {
   --off-white: #fafafa;
-  overflow: scroll;
-  width: 100%;
-  scroll-snap-type: y mandatory;
-  scroll-snap-align: center;
-  background: linear-gradient(to bottom right, 	#f0afdd 0%,	#a2e5e0 100%);
-  background-repeat: no-repeat;
+  overflow: auto;
 }
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  background: linear-gradient(to bottom right, 	#f0afdd 0%,	#a2e5e0 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
 .App {
-  width: 80%;
-  min-width: 960px;
-  margin: 25px auto;
-  padding: 25px;
-  justify-self: center;
+  max-width: 1920px;
+  margin: 50px;
   display: flex;
-  border: 5px solid black;
-  background-color: white;
-  box-shadow: 15px 10px 5px white;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--off-white);
 }
 
 h1 {
-  font-size: 3vw;
-  text-shadow: 5px 2px 2px #f0afdd;
+  font-size: 65px;
 }
 
 h2 {
-  font-size: 2vw;
-  text-shadow: 5px 2px 2px #f0afdd;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.title {
+  float: left;
 }
 
 .nav {
   position: sticky;
-  top: 100px;
-  height: 100%;
-  width: auto;
-}
-
-.profilepic {
-  max-width: 100%;
-  border-radius: 50%;
-}
-
-.name {
-  margin-top: 25px;
-  font-size: 40px;
-  text-shadow: 5px 2px 2px #f0afdd;
-}
-
-.contact {
-  font-size: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.nav-content {
-  padding: 25px;
-  width: 450px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .nav-items {
-  padding: 5px;
-  line-height: 25px;
+  padding: 25px 50px;
+  margin: 0;
+  justify-content: flex-end;
+  gap: 35px;
+  display: flex;
+  background-color: var(--off-white);
 }
 
 .nav-item {
   display: flex;
   flex-direction: row;
   font-size: 30px;
+  font-weight: bold;
   color: #333;
 }
 
@@ -90,15 +69,40 @@ h2 {
   cursor: pointer;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.intro-text {
+  padding-left: 50px;
+}
+
+.about-text {
+  padding: 75px;
+}
+
 .content {
-  padding: 50px;
+  width: auto;
+  padding: 50px 100px;
   overflow: hidden;
 }
 
 .section-content {
   line-height: 40px;
-  font-size: 1.2vw;
-  text-align: justify;
+  font-size: 25px;
+  padding: 75px;
 }
 
 .section {
@@ -118,21 +122,22 @@ h2 {
   text-shadow: 5px 2px 2px #f0afdd;
 }
 
+
 .project-link {
   text-align: right;
   padding: 5px;
 }
 
 .project-cards {
-  padding: 50px 20px;
+  padding: 50px 0px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 450px;
-  margin: 30px;
+  width: 400px;
+  margin: 20px;
   height: 325px;
   border: 3px solid black;
   box-shadow: 15px 10px 5px #f0afdd;
@@ -143,10 +148,14 @@ h2 {
 .card a {
   text-decoration: none;
   color: black;
-  text-shadow: 5px 2px 2px #c273aa;
+  font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
   padding: 25px;
+}
+
+.card a:hover {
+  color: #f0afdd;
 }
 
 .card * {
@@ -167,7 +176,6 @@ h2 {
   line-height: 32px;
   font-weight: bold;
   font-size: 20px;
-  text-shadow: 5px 2px 2px #f0afdd;
   text-transform: uppercase;
   text-align: center;
 }
@@ -179,14 +187,15 @@ h2 {
 
 .card p {
   margin: 0;
-  line-height: 1.5;
+  line-height: normal;
+  text-align: justify;
   font-size: 20px;
   padding-top: 2px;
   text-align: center;
 }
 
 .card:hover img, .card:focus-within img {
-  margin-top: -125px;
+  margin-top: -130px;
 }
 
 .card:hover h3, .card:focus-within h3 {
@@ -196,4 +205,26 @@ h2 {
 .card:hover {
   box-shadow: none;
   transition: 1s ease;
+}
+
+.contact {
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .App {
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+  } 
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    padding: 0;
+  }
 }

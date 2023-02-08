@@ -17,11 +17,9 @@ class App extends Component {
         <Navbar />
         <div className="content">
           <Section
-            title="Hello, my name is Natasha👋"
             subtitle={About}
             id="aboutme"
             className="child"
-            main={true}
           />
           <Divider color="#DD9FE0" />
           <Section
