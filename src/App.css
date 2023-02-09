@@ -28,20 +28,19 @@ body {
 }
 
 h1 {
-  font-size: 65px;
-  flex-wrap: nowrap;
+  font-size: 4.5vw;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 2.5vw;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 2vw;
 }
 
-.title {
-  float: left;
+h4 {
+  font-size: 1.5vw;
 }
 
 .nav {
@@ -124,8 +123,7 @@ h3 {
 }
 
 .section-content {
-  line-height: 40px;
-  font-size: 25px;
+  font-size: 2vw;
   padding: 75px;
 }
 
@@ -250,6 +248,7 @@ h3 {
 
 
 @media screen and (max-width: 900px) {
+
   .App {
     margin: 0;
     padding: 10px;
@@ -261,29 +260,31 @@ h3 {
     flex-direction: column;
   }
 
-  .intro-text {
-    padding: 0;
-  }
-
-  .about-text {
-    padding: 0;
-  }
-
-  .contact {
-    padding: 0;
-  }
-
-  h2 {
-    font-size: 25px;
+  * .intro-text, .about-text, .content, .project-cards, .section-content, .skills-section {
+    padding: 5px;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
+    padding: 10px;
   }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card a {
+    font-size: 20px;
+  }
+
 
   .menu-icon {
     display:flex;
-    justify-content: end;
+    justify-content: flex-end;
     cursor: pointer;
   }
 
