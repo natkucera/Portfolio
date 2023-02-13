@@ -22,22 +22,12 @@ function Projects() {
                 </div>
             </div>
 
-            <div class="card" id="project2">
-                <img src="https://picsum.photos/id/404/367/267" alt=""/>
-                <h3>Library</h3>
-                <div class="focus-content">
-                    <p>Library site that allows you to add books with details, mark if you have read it, and save for future use. </p>
-                    <div class="project-link"><a href="www.fb.com">View Project</a></div>
-                </div>
-            </div>
-
-
             <div class="card" id="project3">
                 <img src="https://picsum.photos/id/404/367/267" alt=""/>
                 <h3>Tic Tac Toe</h3>
                 <div class="focus-content">
                     <p>A browser game that allows the user to select 2 player or play with a computer. Built using JavaScript, HTML, and CSS.</p>
-                    <div class="project-link"><a href="www.fb.com">View Project</a></div>
+                    <div class="project-link"><a href="https://natkucera.github.io/Tic-Tac-Toe/">View Project</a></div>
                 </div>
             </div>
 
