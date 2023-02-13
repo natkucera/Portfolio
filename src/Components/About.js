@@ -16,7 +16,7 @@ function About() {
         <div className="intro-text">
           <h1>Hello,</h1> 
           <h1>I'm Natasha<span role="img" aria-label="Hand">👋</span> </h1>
-          <h2>I am an enthusiastic, <span class="highlight">self-taught programmer</span> who began my journey in early 2022.</h2>
+          <h2>I am an enthusiastic, <span class="highlight">self-taught web developer</span> who began my journey in early 2022.</h2>
           <div className="contact">
             <Button startIcon={<EmailIcon />} 
               sx={{

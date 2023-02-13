@@ -6,7 +6,7 @@ function Projects() {
     <div className="projects">
 
         <div className="project-text">
-            <p>I made this site from scratch using React's create app, Material UI, JavaScript, and CSS.
+            <p>I made this site from scratch using React, Material UI, JavaScript, and CSS.
                 Below are a few more projects I have completed, mostly from The Odin Project that you can view.</p>
             <p>Check back to see more as I will be updating these as I go.</p>
         </div> 
@@ -18,7 +18,7 @@ function Projects() {
                 <h3>Calculator</h3>
                 <div class="focus-content">
                     <p>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.. </p>
-                    <div class="project-link"><a href="www.fb.com">View Project</a></div>
+                    <div class="project-link"><a href="https://natkucera.github.io/Calculator/">View Project</a></div>
                 </div>
             </div>
 

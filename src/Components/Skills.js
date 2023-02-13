@@ -13,7 +13,7 @@ const chipStyle = {
 function Skills() {
   return (
     <div className="skills-section">
-        <Grid container spacing={6}>
+        <Grid container spacing={4}>
           <Grid item xs={6}>
             <h4>Languages & Frameworks</h4>
               <Chip sx={ chipStyle } label="HTML" />
