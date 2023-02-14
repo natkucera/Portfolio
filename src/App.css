@@ -106,7 +106,6 @@ h4 {
 
 .profilepic {
   width: 100%;
-
 }
 
 .intro-text {
@@ -120,7 +119,6 @@ h4 {
 .content {
   width: auto;
   padding: 50px 100px;
-  overflow: hidden;
 }
 
 .section-content {
@@ -145,37 +143,38 @@ h4 {
   text-shadow: 5px 2px 2px #f0afdd;
 }
 
-.project-link {
-  text-align: right;
-  padding: 5px;
-}
-
 .project-cards {
   padding: 50px 0px;
+  width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   margin: auto;
 }
 
-.card-text {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  width: 450px;
+.card {
+  overflow: hidden;
+  display: block;
 }
 
-.card {
-  margin: 100px;
+.card:nth-of-type(even) img {
+  float: right;
+  padding-left: 50px;
+}
+
+.card:nth-of-type(odd) img {
+  float: left;
+  padding-right: 50px;
+}
+
+.card-text {
+  height: 350px;
 }
 
 .card a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
   font-size: 20px;
-  text-transform: uppercase;
-  padding: 25px;
 }
 
 .card a:hover {
@@ -183,20 +182,20 @@ h4 {
 }
 
 .card img {
-  margin: 0;
+  margin: auto;
   width: 300px;
-  float: left;
-}
-
-#tictactoe img {
-  float: right;
+  height: 300px;
 }
 
 .card p {
-  margin: 0;
   line-height: normal;
   text-align: justify;
   font-size: 20px;
+}
+
+.project-link {
+  display: inline-flex;
+  gap: 25px;
 }
 
 .contact {
@@ -215,19 +214,13 @@ h4 {
   }
 }
 
-
-
 @media screen and (max-width: 900px) {
 
   .App {
     margin: 0;
     padding: 10px;
     border-radius: 0;
-  } 
-
-  .intro {
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
   }
 
   .intro-text, .about-text, .content, .project-cards, .section-content, .skills-section {
@@ -238,8 +231,16 @@ h4 {
     font-size: 20px;
   }
 
+  .project-link {
+    display: block;
+  }
+
   .section {
     padding-top: 20px;
+  }
+
+  .intro {
+    display: block;
   }
 
   h1 {
@@ -257,6 +258,27 @@ h4 {
   }
 
   h4 {
+    font-size: 20px;
+  }
+
+  .project-cards {
+    padding: 5px;
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .card img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card a {
     font-size: 20px;
   }
 

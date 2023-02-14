@@ -1,6 +1,6 @@
 import React from "react";
 import profilepic from "/home/nat/Resume/Website/Portfolio/src/profile-pic.png";
-import EmailIcon from '@mui/icons-material/Email';
+import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
 
@@ -18,8 +18,9 @@ function About() {
           <h1>I'm Natasha<span role="img" aria-label="Hand">👋</span> </h1>
           <h2>I am an enthusiastic, <span class="highlight">self-taught web developer</span> who began my journey in early 2022.</h2>
           <div className="contact">
-            <Button startIcon={<EmailIcon />} 
+            <Button startIcon={<MailIcon />} 
               sx={{
+                fontSize: "large",
                 color: "black",
                 "&:hover": { color: "#DD9FE0" }
                 }}
@@ -27,6 +28,7 @@ function About() {
 
             <Button startIcon={<LinkedInIcon />} 
               sx={{
+                fontSize: "large",
                 color: "black",
                 "&:hover": { color: "#DD9FE0" }
                 }}
