@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "/home/nat/Resume/Website/Portfolio/src/IMG_2857.PNG";
+import profilepic from "/home/nat/Resume/Website/Portfolio/src/profile-pic.png";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';

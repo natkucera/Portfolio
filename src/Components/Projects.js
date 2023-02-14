@@ -1,4 +1,6 @@
 import React from "react";
+import tictactoepic from "/home/nat/Resume/Website/Portfolio/src/tic-tac-toe-pic.png";
+import calcpic from "/home/nat/Resume/Website/Portfolio/src/calculator-pic.png"
 
 function Projects() {
 
@@ -13,20 +15,20 @@ function Projects() {
 
         <div class="project-cards">
 
-            <div class="card" id="project1">
-                <img src="https://picsum.photos/id/404/367/267" alt=""/>
-                <h3>Calculator</h3>
-                <div class="focus-content">
+            <div class="card" id="calculator">
+                <img src={calcpic} alt="calculator"/>
+                <div class="card-text">
+                    <h3>Calculator</h3>
                     <p>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.. </p>
                     <div class="project-link"><a href="https://natkucera.github.io/Calculator/">View Project</a></div>
                 </div>
             </div>
 
-            <div class="card" id="project3">
-                <img src="https://picsum.photos/id/404/367/267" alt=""/>
-                <h3>Tic Tac Toe</h3>
-                <div class="focus-content">
-                    <p>A browser game that allows the user to select 2 player or play with a computer. Built using JavaScript, HTML, and CSS.</p>
+            <div class="card" id="tictactoe">
+                <img src={tictactoepic} alt="tictactoe"/>
+                <div class="card-text">
+                    <h3>Tic Tac Toe</h3>
+                    <p>A 2 player browser game built using JavaScript, HTML, and CSS.</p>
                     <div class="project-link"><a href="https://natkucera.github.io/Tic-Tac-Toe/">View Project</a></div>
                 </div>
             </div>
