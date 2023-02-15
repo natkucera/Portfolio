@@ -18,15 +18,15 @@ function About() {
           <h1>I'm Natasha<span role="img" aria-label="Hand">👋</span> </h1>
           <h2>I am an enthusiastic, <span class="highlight">self-taught web developer</span> who began my journey in early 2022.</h2>
           <div className="contact">
-            <Button startIcon={<MailIcon />} 
+            <Button href="mailto:kucera.nat@gmail.com" startIcon={<MailIcon />} 
               sx={{
                 fontSize: "large",
                 color: "black",
                 "&:hover": { color: "#DD9FE0" }
                 }}
-            >Email</Button>
+            >kucera.nat@gmail.com</Button>
 
-            <Button startIcon={<LinkedInIcon />} 
+            <Button href="https://www.linkedin.com/in/natasha-kucera-62335224a/" startIcon={<LinkedInIcon />} 
               sx={{
                 fontSize: "large",
                 color: "black",

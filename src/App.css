@@ -208,6 +208,11 @@ h4 {
   display: none;
 }
 
+.extra-section a {
+  text-decoration: none;
+  color: black
+}
+
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
@@ -269,13 +274,15 @@ h4 {
   .card {
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
+    justify-content: center;
   }
 
   .card img {
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    float: none;
   }
 
   .card a {

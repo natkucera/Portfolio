@@ -12,14 +12,21 @@ function Projects() {
     <div className="projects">
 
         <div className="project-text">
-            <p>I made this site from scratch using React, Material UI, JavaScript, and CSS.
-                Below are a few more projects I have completed, mostly from The Odin Project that you can view.</p>
+            <p>I made this site from scratch using React, Material UI, JavaScript, and CSS. I also made it mobile friendly. <br />
+                <Button href="https://github.com/natkucera/Portfolio" startIcon={<GitHubIcon />} 
+                    sx={{
+                        color: "black",
+                        "&:hover": { color: "#DD9FE0" }
+                        }}
+                >View Code</Button>
+            </p>
+            <p>Below are a few more projects I have completed, mostly from The Odin Project that you can view.</p>
             <p>Check back to see more as I will be updating these as I go.</p>
         </div> 
 
         <div class="project-cards">
             <div class="card">
-                <img src={calcpic} alt="calculator"/>
+                <div><img src={calcpic} alt="calculator"/></div>
                 <div class="card-text" id="calculator">
                     <h3>Calculator</h3>
                     <p>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.. </p>
@@ -41,7 +48,7 @@ function Projects() {
                 </div>
             </div>
             <div class="card">
-                <img src={tictactoepic} alt="tictactoe"/>
+                <div><img src={tictactoepic} alt="tictactoe"/></div>
                 <div class="card-text" id="tictactoe">
                     <h3>Tic Tac Toe</h3>
                     <p>A two player browser game built using JavaScript, HTML, and CSS.</p>
