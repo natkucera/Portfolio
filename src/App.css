@@ -279,7 +279,8 @@ h4 {
   }
 
   .card img {
-    width: 100%;
+    width: 200px;
+    height: 200px;
     padding: 0;
     margin: auto;
     float: none;
