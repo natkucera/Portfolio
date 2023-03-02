@@ -1,16 +1,17 @@
 {
-  "files": {
-    "main.css": "/static/css/main.30701208.css",
-    "main.js": "/static/js/main.da80fcca.js",
-    "static/media/profile-pic.png": "/static/media/profile-pic.f433ac9befa78562700e.png",
-    "static/media/calculator-pic.png": "/static/media/calculator-pic.915bb084e04c73962d50.png",
-    "static/media/tictactoe-pic.png": "/static/media/tictactoe-pic.83a25b09cff536959234.png",
-    "index.html": "/index.html",
-    "main.30701208.css.map": "/static/css/main.30701208.css.map",
-    "main.da80fcca.js.map": "/static/js/main.da80fcca.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.30701208.css",
-    "static/js/main.da80fcca.js"
-  ]
+  "main.css": "/static/css/main.5bfa7aeb.chunk.css",
+  "main.js": "/static/js/main.43401571.chunk.js",
+  "main.js.map": "/static/js/main.43401571.chunk.js.map",
+  "static/js/1.4e179523.chunk.js": "/static/js/1.4e179523.chunk.js",
+  "static/js/1.4e179523.chunk.js.map": "/static/js/1.4e179523.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/profile-pic.png": "/static/media/profile-pic.1cd72f0e.png",
+  "static/media/TicTacToe.png": "/static/media/TicTacToe.450a11bb.png",
+  "static/media/Calculator.png": "/static/media/Calculator.271118b5.png",
+  "static/media/Todo List.png": "/static/media/Todo List.c56e4e4f.png",
+  "static/css/main.5bfa7aeb.chunk.css.map": "/static/css/main.5bfa7aeb.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.07161e09f009f66928ad44ebd8d7221c.js": "/precache-manifest.07161e09f009f66928ad44ebd8d7221c.js",
+  "service-worker.js": "/service-worker.js"
 }
