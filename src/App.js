@@ -6,7 +6,8 @@ import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Extra from "./Components/Extra";
-import { Divider } from "@mui/material";
+import Intro from "./Components/Intro";
+import Footer from "./Components/Footer";
 
 
 class App extends Component {
@@ -15,34 +16,33 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Intro />
         <div className="content">
           <Section
             subtitle={About}
             id="aboutme"
             className="child"
           />
-          <Divider color="#DD9FE0" />
+
           <Section
-            title="Projects"
             subtitle={Projects}
             id="projects"
             className="child"
           />
-          <Divider color="#DD9FE0" />
+
           <Section
-            title="Skills"
             subtitle={Skills}
             id="skills"
             className="child"
           />
-          <Divider color="#DD9FE0" />
+
           <Section
-            title="Extra"
             subtitle={Extra}
             id="extra"
             className="child"
           />
         </div>
+        <Footer />
       </div>
     );
   }

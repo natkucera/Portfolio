@@ -1,18 +1,23 @@
 import { Grid, Chip } from "@mui/material";
 import React from "react";
+import FadeIn from "./FadeIn";
 
 const chipStyle = {
   border: "solid 1px black",
   borderRadius: 5,
-  backgroundColor: "#f0afdd",
-  fontSize: "15px",
-  padding: "5px",
-  margin: "5px",
+  backgroundColor: "#fde6dd",
+  fontSize: "20px",
+  padding: "10px",
+  margin: "10px",
 }
 
 function Skills() {
   return (
     <div className="skills-section">
+      <div className="cloud-border"></div>
+      <FadeIn>
+        <h1>Skills.</h1>
+        <div className="skills-content">
         <Grid container spacing={4}>
           <Grid item xs={6}>
             <h4>Languages & Frameworks</h4>
@@ -24,6 +29,7 @@ function Skills() {
               <Chip sx={ chipStyle } label="SQL" />
               <Chip sx={ chipStyle } label="C" />
               <Chip sx={ chipStyle } label="NodeJS" />
+              <Chip sx={ chipStyle } label="TypeScript" />
           </Grid>
           <Grid item xs={6}>
             <h4>Soft Skills</h4>
@@ -36,7 +42,8 @@ function Skills() {
               <Chip sx={ chipStyle } label="Patience" />
           </Grid>
         </Grid>
-        
+        </div>
+      </FadeIn>
     </div>
   );
 }

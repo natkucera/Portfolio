@@ -14,6 +14,7 @@ export default function Navbar() {
 
     return (
       <nav className="nav" id="navbar">
+        <div className="name-logo">N | K</div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
           </div>

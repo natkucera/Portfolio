@@ -1,101 +1,115 @@
 import React from "react";
-import tictactoepic from "/home/natasha/Projects/Portfolio/src/TicTacToe.png";
-import calcpic from "/home/natasha/Projects/Portfolio/src/Calculator.png";
-import todopic from "/home/natasha/Projects/Portfolio/src/Todo List.png"
 import { Button } from "@mui/material";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import FadeIn from "./FadeIn";
 
 
 function Projects() {
 
   return (
     <div className="projects">
-
+        <FadeIn>
         <div className="project-text">
-            <p>I made this site from scratch using React, Material UI, JavaScript, and CSS. I also made it mobile friendly. <br />
-                <Button href="https://github.com/natkucera/Portfolio" startIcon={<GitHubIcon />} 
-                    sx={{
-                        color: "black",
-                        "&:hover": { color: "#DD9FE0" }
-                        }}
-                >View Code</Button>
-            </p>
-            <p>Below are a few more projects I have completed, mostly from The Odin Project that you can view.</p>
-            <p>Check back to see more as I will be updating these as I go.</p>
+            <h1>PROJECTS.</h1>
+            <p>I made this mobile friendly site from scratch using React, Material UI, JavaScript, and CSS.
+            Below are a few more projects I have completed.<br/> <br/>
+            Check back to see more as I will be updating these as I go.</p>
         </div> 
+        </FadeIn>
 
-        <div class="project-cards">
+        <div className="project-cards">
 
-            <div class="card">
-                <div><img src={calcpic} alt="calculator"/></div>
-                <div class="card-text" id="calculator">
-                    <h3>Calculator</h3>
-                    <p>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.. </p>
-                    <div className="project-link">
-                        <Button href="https://natkucera.github.io/Calculator/" startIcon={<ArrowOutwardIcon />} 
+        <FadeIn>
+            <div class="card badbunch">
+                <div class="info">
+                    <div className="current-project">&#91;current project&#93;</div>
+                    <span>A game development website made with Next.js, TypeScript, JavaScript, HTML, and CSS. A parallax scrolling effect was made using JavaScript and elements of CSS. It is also CSS edited to make it very mobile friendly.</span>
+                    <div class="project-link">
+                    <Button href="https://https://stare.gg" startIcon={<ArrowOutwardIcon />} 
                             sx={{
-                                color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                color: 'black',
+                                "&:hover": { textDecoration: 'underline'  }
+                                }}
+                        >View Project</Button>
+                    </div>
+                </div>
+                <div class="color-overlay"></div>
+            </div>
+            </FadeIn>
+
+            <FadeIn>
+            <div class="card calculator">
+                <div class="info">
+                    <span>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.</span>
+                    <div class="project-link">
+                    <Button href="https://natkucera.github.io/Calculator/" startIcon={<ArrowOutwardIcon />} 
+                            sx={{
+                                color: 'black',
+                                "&:hover": { textDecoration: 'underline'  }
                                 }}
                         >View Project</Button>
 
                         <Button href="https://github.com/natkucera/Calculator" startIcon={<GitHubIcon />} 
                             sx={{
-                                color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                color: 'black',
+                                "&:hover": { textDecoration: 'underline'  }
                                 }}
                         >View Code</Button>
                     </div>
                 </div>
+                <div class="color-overlay"></div>
             </div>
+            </FadeIn>
 
-            <div class="card">
-                <div><img src={tictactoepic} alt="tictactoe"/></div>
-                <div class="card-text" id="tictactoe">
-                    <h3>Tic Tac Toe</h3>
-                    <p>A two player browser game built using JavaScript, HTML, and CSS.</p>
+            <FadeIn>
+            <div class="card tictactoe">
+                <div class="info">
+                    <span>A two player browser game built using JavaScript, HTML, and CSS.</span>
                     <div class="project-link">
-                        <Button href="https://natkucera.github.io/Tic-Tac-Toe/" startIcon={<ArrowOutwardIcon />} 
+                    <Button href="https://natkucera.github.io/Tic-Tac-Toe/" startIcon={<ArrowOutwardIcon />} 
                             sx={{
-                                color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                color:'black',
+                                "&:hover": { textDecoration: 'underline' }
                                 }}
                         >View Project</Button>
                         <Button href="https://github.com/natkucera/Tic-Tac-Toe" startIcon={<GitHubIcon />} 
                             sx={{
-                                color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                color: 'black',
+                                "&:hover": { textDecoration: 'underline'  }
                                 }}
                         >View Code</Button>
                     </div>
                 </div>
+                <div class="color-overlay"></div>
             </div>
+            </FadeIn>
 
-            <div class="card">
-                <div><img src={todopic} alt="todo-list"/></div>
-                <div class="card-text" id="todo-list">
-                    <h3>Todo List</h3>
-                    <p>A Todo List application that uses localStorage to add, delete, edit, and mark tasks completed. Built with JavaScript, HTML, CSS using React and Material UI components. </p>
+            <FadeIn>
+            <div class="card todo">
+                <div class="info">
+                    <span>A Todo List application that uses localStorage to add, delete, edit, and mark tasks completed. Built with JavaScript, HTML, CSS using React and Material UI components.</span>
                     <div class="project-link">
                         <Button href="https://natkucera.github.io/Todo-List/" startIcon={<ArrowOutwardIcon />} 
                             sx={{
                                 color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                "&:hover": { textDecoration: 'underline' }
                                 }}
                         >View Project</Button>
                         <Button href="https://github.com/natkucera/Todo-List" startIcon={<GitHubIcon />} 
                             sx={{
                                 color: "black",
-                                "&:hover": { color: "#DD9FE0" }
+                                "&:hover": { textDecoration: 'underline' }
                                 }}
                         >View Code</Button>
                     </div>
                 </div>
+                <div class="color-overlay"></div>
             </div>
+            </FadeIn>
 
         </div>
-    </div>
+        </div>
   );
 }
 
