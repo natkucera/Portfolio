@@ -188,7 +188,7 @@ body {
 
 .section-content#aboutme {
   margin: 0px;
-  padding-bottom: 0;
+  padding-bottom: 200px;
   color: black;
 }
 
@@ -247,7 +247,6 @@ body {
 .projects {
   margin: auto;
   padding: 250px 0;
-  max-width: 70%;
 }
 
 .project-text h1 {
@@ -257,26 +256,26 @@ body {
   font-size: 75px;
   text-decoration: underline;
   text-decoration-color: rgb(179, 191, 239);
-  margin: 0;
 }
 
 .project-text {
   padding-top: 175px;
-  display: table-cell;
-  background: url("./images/white-cloud.png") center;
+  display: flex;
+  flex-direction: column;
+  background: url("./images/white-cloud3.png") center;
+  filter: drop-shadow(10px 5px 7px #555555a7);
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  height: 450px;
-  vertical-align: middle;
+  min-height: 450px;
 }
 
 .project-text p {
   margin: 0 auto;
-  max-width: 50%;
   text-align: center;
   font-size: 20px;
   padding: 50px;
+  width: 650px;
 }
 
 span.current-project {
@@ -284,6 +283,7 @@ span.current-project {
 }
 
 .project-cards {
+  max-width: 60%;
   min-height: 100vh;
   margin: auto;
   padding: 100px 50px;
@@ -340,7 +340,7 @@ span.current-project {
 }
 
 .card:hover .info{
-  bottom: -5em;
+  bottom: -3em;
   opacity: 1;
 }
 
@@ -380,19 +380,21 @@ span.current-project {
 
 /* skills section css */
 
+.skills-section .front-clouds {
+  background: url("./images/clouds-front.png") top;
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 10%;
+}
+
 .skills-section {
   padding-bottom: 250px;
   width: 100%;
-}
-
-.cloud-border {
-  background-image: url("./images/clouds-front.png");
-  background-size: contain;
-  background-repeat: repeat-x;
   position: relative;
-  height: 300px;
-  width: 100%;
-  top: -25%;
 }
 
 #skills h1 {
@@ -402,6 +404,7 @@ span.current-project {
   font-size: 75px;
   text-decoration: underline;
   text-decoration-color: rgb(178, 210, 239);
+  padding-top: 100px;
 }
 
 #skills {
@@ -417,6 +420,16 @@ span.current-project {
   padding: 56px;
   max-width: 60%;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.skills-content>div {
+  margin: auto;
+  padding-bottom: 75px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 /* extra section css css */
@@ -463,10 +476,11 @@ span.current-project {
 .footer-clouds {
   background-image: url("./images/clouds-front.png");
   background-size: contain;
+  background-repeat: repeat-x;
   position: relative;
   height: 100%;
   width: 100%;
-  top: -60%;
+  top: -55%;
   z-index: 100000;
 }
 
@@ -483,6 +497,19 @@ span.current-project {
 
 
 /* media css */
+
+@media (max-width: 1900px) {
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-text {
+    margin-top: 0;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
@@ -517,6 +544,10 @@ span.current-project {
     font-size: 15px;
   }
 
+  .about-section h1 {
+    padding-bottom: 50px;
+  }
+
   .about-content {
     max-width: 100%;
   }
@@ -534,7 +565,7 @@ span.current-project {
 
 
   .section-content h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .project-link {
@@ -543,34 +574,68 @@ span.current-project {
 
   .projects {
     max-width: 100%;
+    padding-top: 0px;
   }
 
-  .project-text {
-    height: 350px;
-    padding-top: 50px;
+  .project-text h1 {
+    margin-top: 155px;
   }
 
   .project-text p {
-    display: inherit;
-    padding: 0 40px;
     font-size: 15px;
-    margin: 20px;
+    width: 80%;
+    background-color: white;
   }
 
+  .card.todo {
+    background: url('./images/Todo List.png') no-repeat;
+    background-size: 350px 350px;
+  }
+  
+  .card.tictactoe {
+    background: url('./images/TicTacToe.png') no-repeat;
+    background-size: 350px 350px;
+  }
+  
+  .card.calculator {
+    background: url('./images/Calculator.png') no-repeat;
+    background-size: 350px 350px;
+  }
+  
+  .card.badbunch {
+    background: url('./images/BadBunch.png');
+    background-size: 350px 350px;
+  }
 
   .card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     justify-content: center;
+    width: 350px;
+    height: 350px;
   }
 
   .card a {
     font-size: 20px;
   }
 
+  #skills h1 {
+    font-size: 40px;
+  }
+
   .skills-section {
     margin: auto;
+    padding-top: 75px;
+  }
+
+  .skills-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   .extra-section {
@@ -618,7 +683,17 @@ span.current-project {
   }
 
   .footer {
+    height: 100px;
     font-size: 15px;
-    padding: 50px 0px;
+    padding: 10px 0px;
+  }
+
+  .footer-text {
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  .footer-clouds {
+    height: 100px;
   }
 }

@@ -107,7 +107,6 @@ function Projects() {
                 <div class="color-overlay"></div>
             </div>
             </FadeIn>
-
         </div>
         </div>
   );
