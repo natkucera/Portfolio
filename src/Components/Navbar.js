@@ -34,23 +34,23 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   activeClass="active"
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                >Projects</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  activeClass="active"
                   to="skills"
                   spy={true}
                   smooth={true}
                   offset={-70}
                   duration={500}
                 >Skills</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >Projects</Link>
               </li>
               
               <li className="nav-item">

@@ -1,5 +1,5 @@
 import React from "react";
-import MailIcon from '@mui/icons-material/Mail';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
 
@@ -14,13 +14,13 @@ export default function Intro() {
             <h2>An enthusiastic, <span class="highlight">self-taught web developer</span></h2>
         </div>
         <div className="contact">
-                <Button href="mailto:kucera.nat@gmail.com" startIcon={<MailIcon />} 
+                <Button href="https://github.com/natkucera" startIcon={<GitHubIcon />} 
                 sx={{
                     fontSize: 14,
                     color: "black",
                     "&:hover": { fontWeight: "bold" }
                     }}
-                >kucera.nat@gmail.com</Button>
+                >Github</Button>
 
                 <Button href="https://www.linkedin.com/in/natasha-kucera-62335224a/" startIcon={<LinkedInIcon />} 
                 sx={{

@@ -25,14 +25,15 @@ class App extends Component {
           />
 
           <Section
-            subtitle={Projects}
-            id="projects"
+            subtitle={Skills}
+            id="skills"
             className="child"
           />
 
+
           <Section
-            subtitle={Skills}
-            id="skills"
+            subtitle={Projects}
+            id="projects"
             className="child"
           />
 

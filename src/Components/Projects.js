@@ -11,102 +11,97 @@ function Projects() {
     <div className="projects">
         <FadeIn>
         <div className="project-text">
-            <h1>PROJECTS.</h1>
-            <p>I made this mobile friendly site from scratch using React, Material UI, JavaScript, and CSS.
-            Below are a few more projects I have completed.<br/> <br/>
-            Check back to see more as I will be updating these as I go.</p>
+            <h1>Projects</h1>
         </div> 
         </FadeIn>
 
         <div className="project-cards">
-
+        
         <FadeIn>
-            <div class="card badbunch">
-                <div class="info">
-                    <div className="current-project">&#91;current project&#93;</div>
-                    <span>A game development website made with Next.js, TypeScript, JavaScript, HTML, and CSS. A parallax scrolling effect was made using JavaScript and elements of CSS. It is also CSS edited to make it very mobile friendly.</span>
-                    <div class="project-link">
-                    <Button href="https://https://stare.gg" startIcon={<ArrowOutwardIcon />} 
-                            sx={{
-                                color: 'black',
-                                "&:hover": { textDecoration: 'underline'  }
-                                }}
-                        >View Project</Button>
-                    </div>
-                </div>
-                <div class="color-overlay"></div>
-            </div>
-            </FadeIn>
+        <div className="cards-container">
 
-            <FadeIn>
-            <div class="card calculator">
-                <div class="info">
-                    <span>A calculator with basic math operators that is build with JavaScript, HTML, and CSS.</span>
-                    <div class="project-link">
+
+            <div className="card-image" id="badbunch-card"></div>
+            <div className="card-text">
+                <h2>Badbunch Website</h2>
+                A game development website. <br/><br/>
+                Built with Next.js, TypeScript, JavaScript, HTML, and CSS. <br/><br/>
+                <span className="card-links">
+                    <Button href="https://stare.gg" startIcon={<ArrowOutwardIcon />} 
+                                sx={{
+                                    color: 'black',
+                                    "&:hover": { textDecoration: 'underline'  }
+                                    }}
+                    >View Project</Button>
+                </span>
+            </div>
+
+            <div className="card-image" id="todo-card"></div>
+            <div className="card-text">
+                <h2>ToDo List</h2>
+                A Todo List application that uses localStorage to add, delete, edit, and mark tasks completed. <br/> <br/>
+                Built with JavaScript, HTML, CSS using React and Material UI components <br/> <br/>
+                <span className="card-links">
+                    <Button href="https://natkucera.github.io/Todo-List/" startIcon={<ArrowOutwardIcon />} 
+                            sx={{
+                                color: "black",
+                                "&:hover": { textDecoration: 'underline' }
+                                }}
+                    >View Project</Button>
+                    <Button href="https://github.com/natkucera/Todo-List" startIcon={<GitHubIcon />} 
+                            sx={{
+                                color: "black",
+                                "&:hover": { textDecoration: 'underline' }
+                                }}
+                    >View Code</Button>
+                </span>
+            </div>
+
+            <div className="card-image" id="calculator-card"></div>
+            <div className="card-text">
+                <h2>Calculator</h2>
+                A calculator with basic math operators. <br/><br/>
+                Built with JavaScript, HTML, and CSS. <br/><br/>
+                <span className="card-links">
                     <Button href="https://natkucera.github.io/Calculator/" startIcon={<ArrowOutwardIcon />} 
                             sx={{
                                 color: 'black',
                                 "&:hover": { textDecoration: 'underline'  }
                                 }}
-                        >View Project</Button>
+                    >View Project</Button>
 
-                        <Button href="https://github.com/natkucera/Calculator" startIcon={<GitHubIcon />} 
+                    <Button href="https://github.com/natkucera/Calculator" startIcon={<GitHubIcon />} 
                             sx={{
                                 color: 'black',
                                 "&:hover": { textDecoration: 'underline'  }
                                 }}
-                        >View Code</Button>
-                    </div>
-                </div>
-                <div class="color-overlay"></div>
+                    >View Code</Button>
+                </span>
             </div>
-            </FadeIn>
 
-            <FadeIn>
-            <div class="card tictactoe">
-                <div class="info">
-                    <span>A two player browser game built using JavaScript, HTML, and CSS.</span>
-                    <div class="project-link">
+            <div className="card-image" id="tictactoe-card"></div>
+            <div className="card-text">
+                <h2>Tic Tac Toe Game</h2>
+                A two player browser game <br/> <br/>
+                Built using JavaScript, HTML, and CSS. <br/><br/>
+                <span className="card-links">
                     <Button href="https://natkucera.github.io/Tic-Tac-Toe/" startIcon={<ArrowOutwardIcon />} 
                             sx={{
                                 color:'black',
                                 "&:hover": { textDecoration: 'underline' }
                                 }}
-                        >View Project</Button>
-                        <Button href="https://github.com/natkucera/Tic-Tac-Toe" startIcon={<GitHubIcon />} 
+                    >View Project</Button>
+                    <Button href="https://github.com/natkucera/Tic-Tac-Toe" startIcon={<GitHubIcon />} 
                             sx={{
                                 color: 'black',
                                 "&:hover": { textDecoration: 'underline'  }
                                 }}
-                        >View Code</Button>
-                    </div>
-                </div>
-                <div class="color-overlay"></div>
+                    >View Code</Button>
+                </span>
             </div>
-            </FadeIn>
 
-            <FadeIn>
-            <div class="card todo">
-                <div class="info">
-                    <span>A Todo List application that uses localStorage to add, delete, edit, and mark tasks completed. Built with JavaScript, HTML, CSS using React and Material UI components.</span>
-                    <div class="project-link">
-                        <Button href="https://natkucera.github.io/Todo-List/" startIcon={<ArrowOutwardIcon />} 
-                            sx={{
-                                color: "black",
-                                "&:hover": { textDecoration: 'underline' }
-                                }}
-                        >View Project</Button>
-                        <Button href="https://github.com/natkucera/Todo-List" startIcon={<GitHubIcon />} 
-                            sx={{
-                                color: "black",
-                                "&:hover": { textDecoration: 'underline' }
-                                }}
-                        >View Code</Button>
-                    </div>
-                </div>
-                <div class="color-overlay"></div>
-            </div>
-            </FadeIn>
+        </div>
+        </FadeIn>
         </div>
         </div>
   );

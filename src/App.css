@@ -108,7 +108,7 @@ body {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color:rgb(179, 191, 239);
+  background-color:#c5d7f9;
 }
 
 /* section css */
@@ -198,7 +198,9 @@ body {
   font-size: 70px;
   z-index: 10;
   text-decoration: underline;
-  text-decoration-color: rgb(179, 191, 239);
+  text-decoration-color: #c2d5fa;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .about-section .front-clouds {
@@ -211,190 +213,37 @@ body {
   position: absolute;
 }
 
-.about-content {
-  position: relative;
-  max-width: 65%;
-  display: flex;
-  align-items: center;
-  margin: auto;
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  padding: 1em;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-pic {
+  background: url("./images/avatar-real.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .about-text {
   font-size: 20px;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 200px;
-  display: flex;
 }
 
-.about-text p {
-  text-align: left;
-  padding: 0 100px;
-}
-
-
-/* project section css */
-
-.section #projects {
-  background: url("./images/pink\ clouds.jpeg");
-  background-attachment: fixed;
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-.projects {
-  margin: auto;
-  padding: 250px 0;
-}
-
-.project-text h1 {
-  color: rgb(0, 0, 0);
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: 75px;
-  text-decoration: underline;
-  text-decoration-color: rgb(179, 191, 239);
-}
-
-.project-text {
-  padding-top: 175px;
-  display: flex;
-  flex-direction: column;
-  background: url("./images/white-cloud3.png") center;
-  filter: drop-shadow(10px 5px 7px #555555a7);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 450px;
-}
-
-.project-text p {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
-  padding: 50px;
-  width: 650px;
-}
-
-span.current-project {
-  font-size: 30px;
-}
-
-.project-cards {
-  max-width: 60%;
-  min-height: 100vh;
-  margin: auto;
-  padding: 100px 50px;
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-}
-
-.current-project {
-  font-size: 30px;
-  margin-bottom: 10px;
-  text-decoration: underline;
-  text-decoration-color:  rgb(179, 191, 239);
-}
-
-.card.todo {
-  background: url('./images/Todo List.png') no-repeat;
-  background-size: 450px 450px;
-}
-
-.card.tictactoe {
-  background: url('./images/TicTacToe.png') no-repeat;
-  background-size: 450px 450px;
-}
-
-.card.calculator {
-  background: url('./images/Calculator.png') no-repeat;
-  background-size: 450px 450px;
-}
-
-.card.badbunch {
-  background: url('./images/BadBunch.png');
-  background-size: 450px 450px;
-}
-
-.card{
-  position: relative;
-  width: 450px;
-  height: 450px;
-  box-shadow: 5px 5px 20px rgba(62, 62, 62, 0.654);
-  border: 10px solid rgb(255, 255, 255);
-  margin: 15px;
-  overflow: hidden;
-}
-
-.card *{
-  position: relative;
-  z-index: 2;
-}
-
-.card:hover .color-overlay{
-  background:rgba(255, 255, 255, 0.9);
-}
-
-.card:hover .info{
-  bottom: -3em;
-  opacity: 1;
-}
-
-.color-overlay{
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  transition: 0.7s background;
-  background: rgba(209, 217, 221, 0);
-  z-index: 1;
-}
-
-
-.info{
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  color: #000000;
-  line-height: 1.1em;
-  padding: 20px;
-  position: relative;
-  opacity: 0;
-  background: transparent;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.project-link {
-  padding-top: 20px;
-}
-
-.project-link {
-  gap: 25px;
-}
+@media only screen and (max-width: 650px) {
+  .about-pic {
+    height: 500px;
+  }
+  .about-text {
+    text-align: center;
+  }
+  }
 
 /* skills section css */
 
-.skills-section .front-clouds {
-  background: url("./images/clouds-front.png") top;
-  background-repeat: repeat-x;
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 10%;
-}
-
 .skills-section {
-  padding-bottom: 250px;
   width: 100%;
-  position: relative;
 }
 
 #skills h1 {
@@ -403,42 +252,92 @@ span.current-project {
   font-weight: 900;
   font-size: 75px;
   text-decoration: underline;
-  text-decoration-color: rgb(178, 210, 239);
-  padding-top: 100px;
+  text-decoration-color: #c2d5fa
 }
 
 #skills {
   color: rgb(0, 0, 0);
-  padding: 0;
   display: flex;
   margin: auto;
 }
 
-.skills-content {
-  display: flex;
-  margin: auto;
-  padding: 56px;
-  max-width: 60%;
+.skills-container {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 100px auto;
+}
+
+.skills {
+  padding: 1em;
   text-align: center;
-  flex-wrap: wrap;
 }
 
-.skills-content>div {
-  margin: auto;
-  padding-bottom: 75px;
+.text {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-h2 {
+
+/* project section css */
+
+.projects {
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.project-text h1 {
+  color: rgb(0, 0, 0);
   font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 75px;
+  text-decoration: underline;
+  text-decoration-color: #c5d7f9;
+  padding-bottom: 50px;
 }
+
+.cards-container {
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.card-image {
+  min-height: 400px;
+}
+
+
+#badbunch-card {
+  background: url('./images/BadBunch.png') no-repeat top ;
+  background-size: cover;
+}
+
+#calculator-card {
+  background: url('./images/Calculator.png') no-repeat top;
+  background-size: cover;
+}
+
+#tictactoe-card {
+  background: url('./images/TicTacToe.png') no-repeat top;
+  background-size: cover;
+}
+
+#todo-card {
+  background: url('./images/Todo List.png') no-repeat top;
+  background-size: cover;
+}
+
 
 /* extra section css css */
 
 #extra {
-  padding: 200px 0px;
   margin: auto;
   text-align: center;
-  background-color: #c5d7f9;
 }
 
 .extra-section {
@@ -459,56 +358,37 @@ h2 {
   font-weight: 900;
   font-size: 80px;
   text-decoration: underline;
-  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-color: #c5d7f9;
 }
 
 /* footer css */
 
 .footer {
-  position: relative;
   font-size: 30px;
   text-align: center;
   color: black;
   width: 100%;
-  height: 200px;
+  padding: 15px 0px;
+  vertical-align: center;
+  background-color: #c5d7f9;
 }
 
-.footer-clouds {
-  background-image: url("./images/clouds-front.png");
-  background-size: contain;
-  background-repeat: repeat-x;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: -55%;
-  z-index: 100000;
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .footer-text {
-  vertical-align: middle;
-  height: 150px;
+  padding: 10px 0px;
+  font-size: 20px;
 }
 
 /* hamburger menu hidden css */
 
 .menu-icon {
   display: none;
-}
-
-
-/* media css */
-
-@media (max-width: 1900px) {
-  .about-content {
-    max-width: 100%;
-  }
-
-  .about-text {
-    margin-top: 0;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 768px) {
@@ -544,80 +424,8 @@ h2 {
     font-size: 15px;
   }
 
-  .about-section h1 {
-    padding-bottom: 50px;
-  }
-
-  .about-content {
-    max-width: 100%;
-  }
-
-  .about-text {
-    margin-top: 0;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-text p {
-    font-size: 15px;
-  }
-
-
   .section-content h1 {
     font-size: 40px;
-  }
-
-  .project-link {
-    display: block;
-  }
-
-  .projects {
-    max-width: 100%;
-    padding-top: 0px;
-  }
-
-  .project-text h1 {
-    margin-top: 155px;
-  }
-
-  .project-text p {
-    font-size: 15px;
-    width: 80%;
-    background-color: white;
-  }
-
-  .card.todo {
-    background: url('./images/Todo List.png') no-repeat;
-    background-size: 350px 350px;
-  }
-  
-  .card.tictactoe {
-    background: url('./images/TicTacToe.png') no-repeat;
-    background-size: 350px 350px;
-  }
-  
-  .card.calculator {
-    background: url('./images/Calculator.png') no-repeat;
-    background-size: 350px 350px;
-  }
-  
-  .card.badbunch {
-    background: url('./images/BadBunch.png');
-    background-size: 350px 350px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-  }
-
-  .card a {
-    font-size: 20px;
   }
 
   #skills h1 {
@@ -629,9 +437,17 @@ h2 {
     padding-top: 75px;
   }
 
-  .skills-content {
-    padding: 15px;
-    max-width: 90%;
+  .projects {
+    max-width: 100%;
+    padding-top: 0px;
+  }
+
+  .project-text h1 {
+    margin-top: 155px;
+  }
+
+  .card-text {
+    text-align: center;
   }
 
   h2 {
