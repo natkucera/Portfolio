@@ -16,16 +16,16 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "d369e2484827f82f8eacb451ada52f9e",
-    "url": "/static/media/clouds-front.d369e248.png"
-  },
-  {
     "revision": "b266bd47c73fac9f36ece0d50fc7ac1e",
     "url": "/static/media/avatar-real.b266bd47.jpg"
   },
   {
-    "revision": "fda93379c8de96e904c70202c2ece299",
-    "url": "/static/media/clouds-back.fda93379.jpeg"
+    "revision": "d369e2484827f82f8eacb451ada52f9e",
+    "url": "/static/media/clouds-front.d369e248.png"
+  },
+  {
+    "revision": "271118b57bf2b2803d6bf0d7b73e9e0b",
+    "url": "/static/media/Calculator.271118b5.png"
   },
   {
     "revision": "450a11bbfa80ecedc52e0be6a579761c",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/static/media/Todo List.c56e4e4f.png"
   },
   {
-    "revision": "271118b57bf2b2803d6bf0d7b73e9e0b",
-    "url": "/static/media/Calculator.271118b5.png"
-  },
-  {
     "revision": "e65c295cdf313edbb426c96f74f1cf48",
     "url": "/static/media/white-cloud3.e65c295c.png"
+  },
+  {
+    "revision": "fda93379c8de96e904c70202c2ece299",
+    "url": "/static/media/clouds-back.fda93379.jpeg"
   },
   {
     "revision": "ed811fd5c8ead3dbc6bd4818971c2b7b",
