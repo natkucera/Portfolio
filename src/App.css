@@ -11,6 +11,10 @@ body {
   width: 100%;
 }
 
+.content {
+  background-color: white;
+}
+
 /* app css */
 
 .App {
@@ -184,6 +188,7 @@ body {
   margin: 0px;
   padding-bottom: 200px;
   color: black;
+  background-color: white;
 }
 
 .about-section h1 {
@@ -635,10 +640,5 @@ button[type=submit]:hover {
 
   .card:nth-child(odd) .card-text {
     text-align: center;
-  }
-
-  .footer {
-    padding: 15px;
-    width: fit-content;
   }
 }
