@@ -592,10 +592,6 @@ button[type=submit]:hover {
     font-size: 25px;
   }
 
-  .extra-section {
-    padding: 0;
-  }
-
   .nav {
     height: fit-content;
   }
@@ -657,10 +653,19 @@ button[type=submit]:hover {
     margin: 0;
   }
 
+  .about-section h1 {
+    background-color: white;
+  }
+
   .about-section .front-clouds {
     background: url("./images/clouds-front.png") bottom no-repeat;
     background-size: cover;
-    height: 25%;
-    bottom: -80px;
+    height: 35%;
+    bottom: -110px;
   }
+
+  .intro {
+    background-attachment: initial;
+  }
+
 }
