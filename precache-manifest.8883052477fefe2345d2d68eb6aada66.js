@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ab1a1e696d0d0b080c81",
-    "url": "/static/css/main.72058a5f.chunk.css"
+    "revision": "cddf5ad5054f5020923c",
+    "url": "/static/css/main.debdfc9d.chunk.css"
   },
   {
-    "revision": "ab1a1e696d0d0b080c81",
-    "url": "/static/js/main.ab1a1e69.chunk.js"
+    "revision": "cddf5ad5054f5020923c",
+    "url": "/static/js/main.cddf5ad5.chunk.js"
   },
   {
     "revision": "6fc75df7878debc789eb",
@@ -24,14 +24,6 @@ self.__precacheManifest = [
     "url": "/static/media/avatar-real.b266bd47.jpg"
   },
   {
-    "revision": "fda93379c8de96e904c70202c2ece299",
-    "url": "/static/media/clouds-back.fda93379.jpeg"
-  },
-  {
-    "revision": "c56e4e4f1c7085f44a55525a4e45e60a",
-    "url": "/static/media/Todo List.c56e4e4f.png"
-  },
-  {
     "revision": "271118b57bf2b2803d6bf0d7b73e9e0b",
     "url": "/static/media/Calculator.271118b5.png"
   },
@@ -40,11 +32,23 @@ self.__precacheManifest = [
     "url": "/static/media/TicTacToe.450a11bb.png"
   },
   {
+    "revision": "c56e4e4f1c7085f44a55525a4e45e60a",
+    "url": "/static/media/Todo List.c56e4e4f.png"
+  },
+  {
+    "revision": "fda93379c8de96e904c70202c2ece299",
+    "url": "/static/media/clouds-back.fda93379.jpeg"
+  },
+  {
+    "revision": "e65c295cdf313edbb426c96f74f1cf48",
+    "url": "/static/media/white-cloud3.e65c295c.png"
+  },
+  {
     "revision": "ed811fd5c8ead3dbc6bd4818971c2b7b",
     "url": "/static/media/BadBunch.ed811fd5.png"
   },
   {
-    "revision": "0dd433fdc9e8da1df379ba120a6f9fc3",
+    "revision": "e8fbb48765224e59de5ed4d42f450747",
     "url": "/index.html"
   }
 ];
