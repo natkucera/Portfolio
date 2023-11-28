@@ -11,7 +11,7 @@ body {
   width: 100%;
 }
 
-.content {
+.content, .section {
   background-color: white;
 }
 
@@ -134,6 +134,7 @@ body {
 
 .intro {
   background-image: url('./images/clouds-back.jpeg');
+  z-index: 0;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -201,13 +202,14 @@ body {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
+  background-color: white;
 }
 
 .about-section .front-clouds {
   background: url("./images/clouds-front.png") bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   bottom: 0;
   left: 0;
