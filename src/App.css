@@ -655,4 +655,10 @@ button[type=submit]:hover {
   h1 {
     margin: 0;
   }
+
+  .about-section .front-clouds {
+    background: url("./images/clouds-front.png") bottom no-repeat;
+    background-size: cover;
+    height: 25%;
+  }
 }
