@@ -5,9 +5,9 @@ import Section from "./Components/Section";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
-import Extra from "./Components/Extra";
 import Intro from "./Components/Intro";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 
 class App extends Component {
@@ -38,8 +38,8 @@ class App extends Component {
           />
 
           <Section
-            subtitle={Extra}
-            id="extra"
+            subtitle={Contact}
+            id="contact"
             className="child"
           />
         </div>
