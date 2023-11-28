@@ -500,8 +500,31 @@ button[type=submit]:hover {
 }
 
 @media (max-width: 375px) {
-  .cards-container {
-    grid-template-columns: 1fr;
+  .card {
+    display: block;
+  }
+
+  .contact-container {
+    padding: 150px 0;
+    width: 100%;
+    display: block;
+  }
+
+  .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-title span {
+    font-size: 50px;
+  }
+
+  .contact-pic {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contact-form {
+    padding: 10px;
   }
 }
 
