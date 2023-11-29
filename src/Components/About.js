@@ -9,12 +9,12 @@ function About() {
         if (document.getElementById('about1').style.display === 'none') {
             document.getElementById('about1').style.display = 'block';
             document.getElementById('about2').style.display = 'none';
-            document.getElementById('about-button').innerText = 'Away from the keyboard ⮞';
+            document.getElementById('about-button').innerText = 'Away from the keyboard >';
         }
         else {
             document.getElementById('about1').style.display = 'none';
             document.getElementById('about2').style.display = 'block';
-            document.getElementById('about-button').innerText = '⮜ Back at the keyboard';
+            document.getElementById('about-button').innerText = '< Back at the keyboard';
         }
     }
 }
@@ -43,11 +43,15 @@ function About() {
             </div>
           </div>
           <div id="about2">
-            When I'm not at the computer, I love spending time in the kitchen cooking and experimenting with new food<span role="img" aria-label="Food">🍲</span>. I believe food is an amazing way to connect with others, whether its old friends or new. <br/> 
-            Occasionally I will record and share recipes on my TikTok account <span class="highlight"><a href="https://www.tiktok.com/@nats_bites?lang=en">@nats_bites</a></span>. <br/><br/>
-            Animals have always had a soft spot in my heart. I really enjoy being with my dog Riley<span role="img" aria-label="Dog">🐶</span> and my bird Ollie<span role="img" aria-label="Bird">🐦</span>. <br/><br/>
-            Travel has always been a big part of my life and I really enjoy seeing and learning about other cultures. <br/><br/>
-            When I'm winding down for bed, I love binging on a new (or old) show or reading a good book.
+            When I'm not diving into lines of code, you'll often find me in the kitchen, experimenting with flavors and concocting new recipes. <span role="img" aria-label="Food">🍲</span>
+            Cooking isn't just a hobby; it's my creative outlet—a place where I find joy in blending ingredients much like I do with lines of code. <br/> 
+            Occasionally I will record, edit, and share recipes with others on my TikTok account <span class="highlight"><a href="https://www.tiktok.com/@nats_bites?lang=en">@nats_bites</a></span>. I love teaching others that
+            cooking can be easy and enjoyable. <br/><br/>
+            At home, I share my space with two amazing companions. My sassy bird Ollie <span role="img" aria-label="Bird">🐦</span>, and my sweet dog Riley<span role="img" aria-label="Dog">🐶</span>, who is always up for an adventure,
+            nudging me to step away from the screen and play or go on a nice long walk outdoors. <br/><br/>
+            As much as I love crafting digital solutions and unraveling complex problems, I also cherish the simpler moments - 
+            savoring a homemade meal, watching a new (or old) show, or catching up with friends. Balancing my passion for technology with these
+            delightful facets of life keeps me grounded and fuels my creativity in unexpected ways.  
           </div>
           <button id="about-button" onClick={switchVisible}>Away from the keyboard &#11166; </button>
           </div>
